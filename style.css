@@ -1,0 +1,39 @@
+
+body {
+    background-color: rgb(201, 59, 59);
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: chartreuse;
+    grid-area: h;
+    
+}
+
+main {
+    background-color: cornflowerblue;
+    grid-area: m;
+}
+
+aside {
+    background-color: darkgreen;
+    grid-area: a;
+}
+
+footer {
+    background-color: darkorchid;
+    grid-area: f;
+}
+
+.container   {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* 1 fr significa 1 flex, cria as colunas*/
+    grid-template-rows: 20vh 70vh 20vh;
+    /* grid-gap: 20px; 20 para horizontal e vertical, pode ser 20 e 30 ai para h e v */
+    grid-template-areas: "h h "
+                         "m a"
+                         "f f"
+
+}
+
